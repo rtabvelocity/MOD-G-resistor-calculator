@@ -1298,7 +1298,7 @@ namespace Resistor_Calculator
             // label58
             // 
             this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(208, 142);
+            this.label58.Location = new System.Drawing.Point(208, 148);
             this.label58.Name = "label58";
             this.label58.Size = new System.Drawing.Size(288, 39);
             this.label58.TabIndex = 9;
@@ -1388,7 +1388,7 @@ namespace Resistor_Calculator
             this.HelpButton = true;
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "G321GAAA01";
+            this.Text = "G321GAAA01 Beta Release v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);

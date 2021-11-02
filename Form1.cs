@@ -9,7 +9,8 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using Point = System.Drawing.Point;
 using Rectangle = System.Drawing.Rectangle;
-
+using System.Drawing.Imaging;
+using System.Drawing.Printing;
 
 namespace Resistor_Calculator
 {
@@ -20,7 +21,9 @@ namespace Resistor_Calculator
         {
             InitializeComponent();
             initialize_all();
-        }
+            printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
+            
+         }
 
         private void Form1_Load(object sender, EventArgs e) {
             // TODO: This line of code loads data into the 'myDataSet.someTable' table. You can move, or remove it, as needed.
@@ -47,15 +50,11 @@ namespace Resistor_Calculator
             double LR1set;
             double LR2set;
             double LR3set;
-                       
             double RR1set;
             double RR2set;
             double RR3set;
-
-
             double valueAccuL = double.Parse(textBox2.Text);
           
-
              /***L Accul Channel**/
             if (valueAccuL <= 1000)
             {
@@ -330,6 +329,11 @@ namespace Resistor_Calculator
 
         }
 
+        Bitmap memoryImage;
+        private PrintDocument printDocument1 = new PrintDocument();
+
+        private Button printButton = new Button();
+        
         private void calculate_new_values()
         {
 
@@ -361,9 +365,26 @@ namespace Resistor_Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            SaveScreenshot(Form.ActiveForm);
+            CaptureScreen();
+            printDocument1.Print();
 
-            //SaveScreenshot(this);
+        }
+
+        private void CaptureScreen()
+                       
+        {
+            Graphics myGraphics = this.CreateGraphics();
+            Size s = this.Size;
+            memoryImage = new Bitmap(s.Width, s.Height, myGraphics);
+            Graphics memoryGraphics = Graphics.FromImage(memoryImage);
+            memoryGraphics.CopyFromScreen(this.Location.X, this.Location.Y, 0, 0, s);
+
+        }
+
+        private void printDocument1_PrintPage(System.Object sender,
+         System.Drawing.Printing.PrintPageEventArgs e)
+        {
+            e.Graphics.DrawImage(memoryImage, 0, 0);
         }
 
         private static void SaveScreenshot(Form frm)
