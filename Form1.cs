@@ -36,7 +36,16 @@ namespace Resistor_Calculator
 
         private void button1_Click(object sender, EventArgs e)
         {
-         calculate_all();
+
+            if (textBox2.Text == "" || textBox6.Text == "" || textBox10.Text == "" || textBox14.Text == "" || textBox18.Text == "" || textBox22.Text == "" || textBox26.Text == "" || textBox30.Text == "")
+            {
+                MessageBox.Show("Value fields cannot be blank. Put zero 0 if none.");
+
+            }
+            else { 
+                calculate_all(); 
+            }
+            
         }
         private void textBox2_TextChanged(object sender, EventArgs e) {
         
@@ -286,10 +295,13 @@ namespace Resistor_Calculator
                 {
 
                     case "DigiKey":
-                        System.Diagnostics.Process.Start("chrome.exe", "https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/52?utm_adgroup=General&utm_source=google&utm_medium=cpc&utm_campaign=EN_Product_Resistors&utm_term=smd%20resistor&utm_content=General&gclid=EAIaIQobChMIge-779_38wIV-CitBh2nIAezEAAYASAAEgJ0z_D_BwE");
+                        System.Diagnostics.Process.Start("chrome.exe", "https://www.digikey.com/en/products/filter/chip-resistor-surface-mount/52?gclid=EAIaIQobChMIge-779_38wIV-CitBh2nIAezEAAYASAAEgJ0z_D_BwE&s=N4IgjCBcoExaBjKAzAhgGwM4FMA0IB7KAbXABYAGANjJAF18AHAFyhAGVmAnASwDsA5iAC%2B%2BAMzwQSSGix5CJcGDER8ATgDsVEPgAcZXTpC6w2-BpVGqasyCpUNVgKyqQYjRrj4yasGRiu7hoQDCAsbJy8giL4YI7QUigYOPhEkKQwFGBO9EyskBzc-EKi4DC%2BktKyKQrpbmpiMIah4QWRxTHgarpqlUlyqYoUuWH5hVElpXB1ME4ABAAKCwCy9MJAA&utm_adgroup=General&utm_campaign=EN_Product_Resistors&utm_content=General&utm_medium=cpc&utm_source=google&utm_term=smd%20resistor");
                         break;
                     case "Newark":
                         System.Diagnostics.Process.Start("chrome.exe", "https://www.newark.com/w/c/passive-components/resistors-fixed-value/chip-smd-resistors?resistor-case-style=smd&ost=smd%2Bresistor");
+                        break;
+                    case "Mouser":
+                        System.Diagnostics.Process.Start("chrome.exe", "https://www.mouser.com/c/passive-components/resistors/smd-resistors-chip-resistors/");
                         break;
                     default:
                         break;
@@ -323,9 +335,17 @@ namespace Resistor_Calculator
         private void button5_Click(object sender, EventArgs e)
         {
 
-            calculate_new_values();
+            if (textBox34.Text == "" )
+            {
+                MessageBox.Show("Please fill out an initial value for resistance.");
 
+            }
 
+            else
+            {
+                calculate_new_values();
+
+            }
 
         }
 

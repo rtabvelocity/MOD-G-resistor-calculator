@@ -1,10 +1,14 @@
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistor Calculator.exe.config
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistor Calculator.exe
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistor Calculator.pdb
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor_Calculator.Form1.resources
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor_Calculator.Properties.Resources.resources
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor Calculator.csproj.GenerateResource.cache
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor Calculator.csproj.CoreCompileInputs.cache
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor Calculator.exe
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor Calculator.pdb
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistor Calculator.csprojAssemblyReference.cache
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistance Calculator.exe.config
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistance Calculator.exe.manifest
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistance Calculator.application
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistance Calculator.exe
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Debug\Resistance Calculator.pdb
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistance Calculator.exe.manifest
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistance Calculator.application
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistance Calculator.exe
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Debug\Resistance Calculator.pdb

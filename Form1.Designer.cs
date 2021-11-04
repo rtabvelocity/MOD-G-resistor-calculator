@@ -30,7 +30,6 @@ namespace Resistor_Calculator
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -125,37 +124,38 @@ namespace Resistor_Calculator
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label47 = new System.Windows.Forms.Label();
             this.label46 = new System.Windows.Forms.Label();
             this.button4 = new System.Windows.Forms.Button();
             this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.label47 = new System.Windows.Forms.Label();
             this.groupBox13 = new System.Windows.Forms.GroupBox();
-            this.groupBox14 = new System.Windows.Forms.GroupBox();
             this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.textBox39 = new System.Windows.Forms.TextBox();
+            this.label57 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label52 = new System.Windows.Forms.Label();
             this.groupBox16 = new System.Windows.Forms.GroupBox();
+            this.textBox37 = new System.Windows.Forms.TextBox();
+            this.label60 = new System.Windows.Forms.Label();
+            this.label59 = new System.Windows.Forms.Label();
+            this.textBox38 = new System.Windows.Forms.TextBox();
+            this.button5 = new System.Windows.Forms.Button();
             this.label48 = new System.Windows.Forms.Label();
+            this.textBox35 = new System.Windows.Forms.TextBox();
             this.label49 = new System.Windows.Forms.Label();
             this.label50 = new System.Windows.Forms.Label();
             this.textBox34 = new System.Windows.Forms.TextBox();
             this.label51 = new System.Windows.Forms.Label();
-            this.textBox35 = new System.Windows.Forms.TextBox();
             this.textBox36 = new System.Windows.Forms.TextBox();
-            this.label52 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.label53 = new System.Windows.Forms.Label();
-            this.label54 = new System.Windows.Forms.Label();
-            this.label55 = new System.Windows.Forms.Label();
-            this.label56 = new System.Windows.Forms.Label();
-            this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
-            this.label59 = new System.Windows.Forms.Label();
-            this.textBox38 = new System.Windows.Forms.TextBox();
-            this.label60 = new System.Windows.Forms.Label();
-            this.textBox39 = new System.Windows.Forms.TextBox();
-            this.textBox37 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
+            this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label61 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.button6 = new System.Windows.Forms.Button();
+            this.label62 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -169,18 +169,11 @@ namespace Resistor_Calculator
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            this.groupBox14.SuspendLayout();
             this.groupBox15.SuspendLayout();
             this.groupBox16.SuspendLayout();
+            this.groupBox14.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(38, 25);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(92, 80);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
@@ -1056,6 +1049,7 @@ namespace Resistor_Calculator
             // 
             // groupBox12
             // 
+            this.groupBox12.Controls.Add(this.label62);
             this.groupBox12.Controls.Add(this.label54);
             this.groupBox12.Controls.Add(this.label53);
             this.groupBox12.Controls.Add(this.label47);
@@ -1067,6 +1061,34 @@ namespace Resistor_Calculator
             this.groupBox12.Size = new System.Drawing.Size(252, 253);
             this.groupBox12.TabIndex = 14;
             this.groupBox12.TabStop = false;
+            // 
+            // label54
+            // 
+            this.label54.AutoSize = true;
+            this.label54.Location = new System.Drawing.Point(15, 152);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(194, 13);
+            this.label54.TabIndex = 5;
+            this.label54.Text = "3. Recommended PPM value is 25ppm.";
+            // 
+            // label53
+            // 
+            this.label53.AutoSize = true;
+            this.label53.Location = new System.Drawing.Point(15, 112);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(192, 26);
+            this.label53.TabIndex = 4;
+            this.label53.Text = "2. Use a power rating of greater than or\r\n    equal to 100mW.";
+            // 
+            // label47
+            // 
+            this.label47.AutoSize = true;
+            this.label47.Location = new System.Drawing.Point(15, 72);
+            this.label47.Name = "label47";
+            this.label47.Size = new System.Drawing.Size(232, 26);
+            this.label47.TabIndex = 3;
+            this.label47.Text = "1. Order a resistor with the nearest value\r\n    of resistance based on the calcul" +
+    "ated results.";
             // 
             // label46
             // 
@@ -1095,22 +1117,13 @@ namespace Resistor_Calculator
             this.comboBox1.FormattingEnabled = true;
             this.comboBox1.Items.AddRange(new object[] {
             "DigiKey",
-            "Newark"});
+            "Newark",
+            "Mouser"});
             this.comboBox1.Location = new System.Drawing.Point(15, 37);
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 0;
             this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
-            // 
-            // label47
-            // 
-            this.label47.AutoSize = true;
-            this.label47.Location = new System.Drawing.Point(15, 72);
-            this.label47.Name = "label47";
-            this.label47.Size = new System.Drawing.Size(232, 26);
-            this.label47.TabIndex = 3;
-            this.label47.Text = "1. Order a resistor with the nearest value\r\n    of resistance based on the calcul" +
-    "ated results.";
             // 
             // groupBox13
             // 
@@ -1120,18 +1133,6 @@ namespace Resistor_Calculator
             this.groupBox13.Size = new System.Drawing.Size(859, 274);
             this.groupBox13.TabIndex = 15;
             this.groupBox13.TabStop = false;
-            // 
-            // groupBox14
-            // 
-            this.groupBox14.Controls.Add(this.label61);
-            this.groupBox14.Controls.Add(this.button6);
-            this.groupBox14.Controls.Add(this.button1);
-            this.groupBox14.Controls.Add(this.button3);
-            this.groupBox14.Location = new System.Drawing.Point(15, 2);
-            this.groupBox14.Name = "groupBox14";
-            this.groupBox14.Size = new System.Drawing.Size(859, 455);
-            this.groupBox14.TabIndex = 16;
-            this.groupBox14.TabStop = false;
             // 
             // groupBox15
             // 
@@ -1148,6 +1149,61 @@ namespace Resistor_Calculator
             this.groupBox15.TabIndex = 0;
             this.groupBox15.TabStop = false;
             this.groupBox15.Enter += new System.EventHandler(this.groupBox15_Enter);
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(208, 148);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(288, 39);
+            this.label58.TabIndex = 9;
+            this.label58.Text = "3. Verify that the resulting new value is as close as possible \r\n     to the init" +
+    "ial value by a deviation of <= 1%.\r\n     ";
+            // 
+            // textBox39
+            // 
+            this.textBox39.Location = new System.Drawing.Point(86, 170);
+            this.textBox39.Name = "textBox39";
+            this.textBox39.Size = new System.Drawing.Size(64, 20);
+            this.textBox39.TabIndex = 21;
+            this.textBox39.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
+            // 
+            // label57
+            // 
+            this.label57.AutoSize = true;
+            this.label57.Location = new System.Drawing.Point(208, 104);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(224, 26);
+            this.label57.TabIndex = 8;
+            this.label57.Text = "2. Make changes to all 3 resistor values or for \r\n    for just 1 or 2 of the resi" +
+    "stors.";
+            // 
+            // label56
+            // 
+            this.label56.AutoSize = true;
+            this.label56.Location = new System.Drawing.Point(207, 69);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(307, 13);
+            this.label56.TabIndex = 7;
+            this.label56.Text = "1. Input the closest resistance value available form the vendors.";
+            // 
+            // label55
+            // 
+            this.label55.AutoSize = true;
+            this.label55.Location = new System.Drawing.Point(207, 46);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(267, 13);
+            this.label55.TabIndex = 6;
+            this.label55.Text = "HOW TO VERIFY A SUITABLE RESISTANCE VALUE";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(229, 12);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(203, 13);
+            this.label52.TabIndex = 5;
+            this.label52.Text = "RESISTANCE - MANUAL CALCULATOR";
             // 
             // groupBox16
             // 
@@ -1170,6 +1226,49 @@ namespace Resistor_Calculator
             this.groupBox16.TabStop = false;
             this.groupBox16.Enter += new System.EventHandler(this.groupBox16_Enter);
             // 
+            // textBox37
+            // 
+            this.textBox37.Location = new System.Drawing.Point(74, 93);
+            this.textBox37.Name = "textBox37";
+            this.textBox37.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
+            this.textBox37.Size = new System.Drawing.Size(64, 20);
+            this.textBox37.TabIndex = 21;
+            // 
+            // label60
+            // 
+            this.label60.AutoSize = true;
+            this.label60.Location = new System.Drawing.Point(15, 146);
+            this.label60.Name = "label60";
+            this.label60.Size = new System.Drawing.Size(21, 13);
+            this.label60.TabIndex = 20;
+            this.label60.Text = "R3";
+            // 
+            // label59
+            // 
+            this.label59.AutoSize = true;
+            this.label59.Location = new System.Drawing.Point(7, 42);
+            this.label59.Name = "label59";
+            this.label59.Size = new System.Drawing.Size(61, 13);
+            this.label59.TabIndex = 18;
+            this.label59.Text = "New value:";
+            // 
+            // textBox38
+            // 
+            this.textBox38.Location = new System.Drawing.Point(74, 120);
+            this.textBox38.Name = "textBox38";
+            this.textBox38.Size = new System.Drawing.Size(64, 20);
+            this.textBox38.TabIndex = 21;
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(17, 174);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(133, 33);
+            this.button5.TabIndex = 16;
+            this.button5.Text = "CHECK";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // label48
             // 
             this.label48.AutoSize = true;
@@ -1178,6 +1277,14 @@ namespace Resistor_Calculator
             this.label48.Size = new System.Drawing.Size(52, 13);
             this.label48.TabIndex = 15;
             this.label48.Text = "Deviation";
+            // 
+            // textBox35
+            // 
+            this.textBox35.Enabled = false;
+            this.textBox35.Location = new System.Drawing.Point(74, 40);
+            this.textBox35.Name = "textBox35";
+            this.textBox35.Size = new System.Drawing.Size(64, 20);
+            this.textBox35.TabIndex = 21;
             // 
             // label49
             // 
@@ -1213,14 +1320,6 @@ namespace Resistor_Calculator
             this.label51.TabIndex = 12;
             this.label51.Text = "Initial value:";
             // 
-            // textBox35
-            // 
-            this.textBox35.Enabled = false;
-            this.textBox35.Location = new System.Drawing.Point(74, 40);
-            this.textBox35.Name = "textBox35";
-            this.textBox35.Size = new System.Drawing.Size(64, 20);
-            this.textBox35.TabIndex = 21;
-            // 
             // textBox36
             // 
             this.textBox36.Enabled = false;
@@ -1230,121 +1329,37 @@ namespace Resistor_Calculator
             this.textBox36.Size = new System.Drawing.Size(64, 20);
             this.textBox36.TabIndex = 1;
             // 
-            // label52
+            // groupBox14
             // 
-            this.label52.AutoSize = true;
-            this.label52.Location = new System.Drawing.Point(229, 12);
-            this.label52.Name = "label52";
-            this.label52.Size = new System.Drawing.Size(203, 13);
-            this.label52.TabIndex = 5;
-            this.label52.Text = "RESISTANCE - MANUAL CALCULATOR";
+            this.groupBox14.Controls.Add(this.pictureBox1);
+            this.groupBox14.Controls.Add(this.label61);
+            this.groupBox14.Controls.Add(this.button6);
+            this.groupBox14.Controls.Add(this.button1);
+            this.groupBox14.Controls.Add(this.button3);
+            this.groupBox14.Location = new System.Drawing.Point(15, 2);
+            this.groupBox14.Name = "groupBox14";
+            this.groupBox14.Size = new System.Drawing.Size(859, 455);
+            this.groupBox14.TabIndex = 16;
+            this.groupBox14.TabStop = false;
             // 
-            // button5
+            // pictureBox1
             // 
-            this.button5.Location = new System.Drawing.Point(17, 174);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(133, 33);
-            this.button5.TabIndex = 16;
-            this.button5.Text = "CHECK";
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.pictureBox1.Image = global::Resistor_Calculator.Properties.Resources.Face_2;
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(23, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(95, 97);
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
             // 
-            // label53
+            // label61
             // 
-            this.label53.AutoSize = true;
-            this.label53.Location = new System.Drawing.Point(15, 112);
-            this.label53.Name = "label53";
-            this.label53.Size = new System.Drawing.Size(192, 26);
-            this.label53.TabIndex = 4;
-            this.label53.Text = "2. Use a power rating of greater than or\r\n    equal to 100mW.";
-            // 
-            // label54
-            // 
-            this.label54.AutoSize = true;
-            this.label54.Location = new System.Drawing.Point(15, 152);
-            this.label54.Name = "label54";
-            this.label54.Size = new System.Drawing.Size(194, 13);
-            this.label54.TabIndex = 5;
-            this.label54.Text = "3. Recommended PPM value is 25ppm.";
-            // 
-            // label55
-            // 
-            this.label55.AutoSize = true;
-            this.label55.Location = new System.Drawing.Point(207, 46);
-            this.label55.Name = "label55";
-            this.label55.Size = new System.Drawing.Size(267, 13);
-            this.label55.TabIndex = 6;
-            this.label55.Text = "HOW TO VERIFY A SUITABLE RESISTANCE VALUE";
-            // 
-            // label56
-            // 
-            this.label56.AutoSize = true;
-            this.label56.Location = new System.Drawing.Point(207, 69);
-            this.label56.Name = "label56";
-            this.label56.Size = new System.Drawing.Size(307, 13);
-            this.label56.TabIndex = 7;
-            this.label56.Text = "1. Input the closest resistance value available form the vendors.";
-            // 
-            // label57
-            // 
-            this.label57.AutoSize = true;
-            this.label57.Location = new System.Drawing.Point(208, 104);
-            this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(224, 26);
-            this.label57.TabIndex = 8;
-            this.label57.Text = "2. Make changes to all 3 resistor values or for \r\n    for just 1 or 2 of the resi" +
-    "stors.";
-            // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(208, 148);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(288, 39);
-            this.label58.TabIndex = 9;
-            this.label58.Text = "3. Verify that the resulting new value is as close as possible \r\n     to the init" +
-    "ial value by a deviation of <= 1%.\r\n     ";
-            // 
-            // label59
-            // 
-            this.label59.AutoSize = true;
-            this.label59.Location = new System.Drawing.Point(7, 42);
-            this.label59.Name = "label59";
-            this.label59.Size = new System.Drawing.Size(61, 13);
-            this.label59.TabIndex = 18;
-            this.label59.Text = "New value:";
-            // 
-            // textBox38
-            // 
-            this.textBox38.Location = new System.Drawing.Point(74, 120);
-            this.textBox38.Name = "textBox38";
-            this.textBox38.Size = new System.Drawing.Size(64, 20);
-            this.textBox38.TabIndex = 21;
-            // 
-            // label60
-            // 
-            this.label60.AutoSize = true;
-            this.label60.Location = new System.Drawing.Point(15, 146);
-            this.label60.Name = "label60";
-            this.label60.Size = new System.Drawing.Size(21, 13);
-            this.label60.TabIndex = 20;
-            this.label60.Text = "R3";
-            // 
-            // textBox39
-            // 
-            this.textBox39.Location = new System.Drawing.Point(86, 170);
-            this.textBox39.Name = "textBox39";
-            this.textBox39.Size = new System.Drawing.Size(64, 20);
-            this.textBox39.TabIndex = 21;
-            this.textBox39.TextChanged += new System.EventHandler(this.textBox39_TextChanged);
-            // 
-            // textBox37
-            // 
-            this.textBox37.Location = new System.Drawing.Point(74, 93);
-            this.textBox37.Name = "textBox37";
-            this.textBox37.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal;
-            this.textBox37.Size = new System.Drawing.Size(64, 20);
-            this.textBox37.TabIndex = 21;
+            this.label61.AutoSize = true;
+            this.label61.Location = new System.Drawing.Point(636, 40);
+            this.label61.Name = "label61";
+            this.label61.Size = new System.Drawing.Size(192, 13);
+            this.label61.TabIndex = 13;
+            this.label61.Text = "Note: All resistance values are in ohms.";
             // 
             // button6
             // 
@@ -1356,14 +1371,14 @@ namespace Resistor_Calculator
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label61
+            // label62
             // 
-            this.label61.AutoSize = true;
-            this.label61.Location = new System.Drawing.Point(636, 40);
-            this.label61.Name = "label61";
-            this.label61.Size = new System.Drawing.Size(192, 13);
-            this.label61.TabIndex = 13;
-            this.label61.Text = "Note: All resistance values are in ohms.";
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(15, 187);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(134, 13);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "4. Select 0805 Case Code.";
             // 
             // Form1
             // 
@@ -1382,15 +1397,14 @@ namespace Resistor_Calculator
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.groupBox13);
             this.Controls.Add(this.groupBox14);
             this.HelpButton = true;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "G321GAAA01 Beta Release v1.0";
             this.Load += new System.EventHandler(this.Form1_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -1414,12 +1428,13 @@ namespace Resistor_Calculator
             this.groupBox12.ResumeLayout(false);
             this.groupBox12.PerformLayout();
             this.groupBox13.ResumeLayout(false);
-            this.groupBox14.ResumeLayout(false);
-            this.groupBox14.PerformLayout();
             this.groupBox15.ResumeLayout(false);
             this.groupBox15.PerformLayout();
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
+            this.groupBox14.ResumeLayout(false);
+            this.groupBox14.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1552,6 +1567,7 @@ namespace Resistor_Calculator
         private System.Windows.Forms.TextBox textBox37;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label61;
+        private System.Windows.Forms.Label label62;
     }
 }
 

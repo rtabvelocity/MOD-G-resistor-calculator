@@ -1,14 +1,14 @@
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistor Calculator.exe.config
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistor Calculator.exe
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistor Calculator.pdb
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.csprojAssemblyReference.cache
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor_Calculator.Form1.resources
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor_Calculator.Properties.Resources.resources
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.csproj.GenerateResource.cache
 C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.csproj.CoreCompileInputs.cache
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.exe
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.pdb
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistor Calculator.exe.manifest
-C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistor Calculator.application
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.exe.manifest
-C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistor Calculator.application
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistance Calculator.exe.config
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistance Calculator.exe.manifest
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistance Calculator.application
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistance Calculator.exe
+C:\Users\rtablan\source\repos\Resistor Calculator\bin\Release\Resistance Calculator.pdb
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistance Calculator.exe.manifest
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistance Calculator.application
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistance Calculator.exe
+C:\Users\rtablan\source\repos\Resistor Calculator\obj\Release\Resistance Calculator.pdb
