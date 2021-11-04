@@ -124,6 +124,7 @@ namespace Resistor_Calculator
             this.textBox25 = new System.Windows.Forms.TextBox();
             this.textBox24 = new System.Windows.Forms.TextBox();
             this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.label62 = new System.Windows.Forms.Label();
             this.label54 = new System.Windows.Forms.Label();
             this.label53 = new System.Windows.Forms.Label();
             this.label47 = new System.Windows.Forms.Label();
@@ -155,7 +156,6 @@ namespace Resistor_Calculator
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label61 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.label62 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -1062,6 +1062,15 @@ namespace Resistor_Calculator
             this.groupBox12.TabIndex = 14;
             this.groupBox12.TabStop = false;
             // 
+            // label62
+            // 
+            this.label62.AutoSize = true;
+            this.label62.Location = new System.Drawing.Point(15, 183);
+            this.label62.Name = "label62";
+            this.label62.Size = new System.Drawing.Size(134, 13);
+            this.label62.TabIndex = 6;
+            this.label62.Text = "4. Select 0805 Case Code.";
+            // 
             // label54
             // 
             this.label54.AutoSize = true;
@@ -1173,10 +1182,10 @@ namespace Resistor_Calculator
             this.label57.AutoSize = true;
             this.label57.Location = new System.Drawing.Point(208, 104);
             this.label57.Name = "label57";
-            this.label57.Size = new System.Drawing.Size(224, 26);
+            this.label57.Size = new System.Drawing.Size(209, 26);
             this.label57.TabIndex = 8;
-            this.label57.Text = "2. Make changes to all 3 resistor values or for \r\n    for just 1 or 2 of the resi" +
-    "stors.";
+            this.label57.Text = "2. Make changes to all 3 resistor values or \r\n    for just 1 or 2 of the resistor" +
+    "s.";
             // 
             // label56
             // 
@@ -1371,15 +1380,6 @@ namespace Resistor_Calculator
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
-            // label62
-            // 
-            this.label62.AutoSize = true;
-            this.label62.Location = new System.Drawing.Point(15, 187);
-            this.label62.Name = "label62";
-            this.label62.Size = new System.Drawing.Size(134, 13);
-            this.label62.TabIndex = 6;
-            this.label62.Text = "4. Select 0805 Case Code.";
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1403,7 +1403,7 @@ namespace Resistor_Calculator
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form1";
-            this.Text = "G321GAAA01 Beta Release v1.0";
+            this.Text = "G321GAAA01 Beta Release v1.0.0   © Copyleft 2021";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

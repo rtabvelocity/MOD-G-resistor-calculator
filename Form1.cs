@@ -380,7 +380,7 @@ namespace Resistor_Calculator
 
         private void button6_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Triple Pressure Indicator MOD.G Resistor Calculator\n\n\t\tBeta Release v1.00 ");
+            MessageBox.Show("Triple Pressure Indicator MOD.G Resistor Calculator\n\n\t\tBeta Release v1.0.0\n\n\t\t © Copyleft 2021 ");
         }
 
         private void button2_Click(object sender, EventArgs e)
