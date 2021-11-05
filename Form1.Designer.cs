@@ -1194,7 +1194,7 @@ namespace Resistor_Calculator
             this.label56.Name = "label56";
             this.label56.Size = new System.Drawing.Size(307, 13);
             this.label56.TabIndex = 7;
-            this.label56.Text = "1. Input the closest resistance value available form the vendors.";
+            this.label56.Text = "1. Input the closest resistance value available from the vendors.";
             // 
             // label55
             // 

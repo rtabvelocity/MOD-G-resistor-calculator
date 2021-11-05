@@ -335,9 +335,9 @@ namespace Resistor_Calculator
         private void button5_Click(object sender, EventArgs e)
         {
 
-            if (textBox34.Text == "" )
+            if (textBox34.Text == "" || textBox37.Text == "" || textBox38.Text == ""|| textBox39.Text == "")
             {
-                MessageBox.Show("Please fill out an initial value for resistance.");
+                MessageBox.Show("Please fill out an initial value for the resistance.\nDo not leave any input fields blank.\nPut zero (0) if none.");
 
             }
 
