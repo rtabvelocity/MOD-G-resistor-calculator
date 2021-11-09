@@ -153,6 +153,8 @@ namespace Resistor_Calculator
             this.label51 = new System.Windows.Forms.Label();
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label61 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
@@ -719,7 +721,7 @@ namespace Resistor_Calculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(207, 406);
+            this.button1.Location = new System.Drawing.Point(381, 404);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 33);
             this.button1.TabIndex = 12;
@@ -729,7 +731,7 @@ namespace Resistor_Calculator
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(477, 406);
+            this.button3.Location = new System.Drawing.Point(684, 404);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 33);
             this.button3.TabIndex = 12;
@@ -739,7 +741,7 @@ namespace Resistor_Calculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(359, 407);
+            this.button2.Location = new System.Drawing.Point(538, 404);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 33);
             this.button2.TabIndex = 12;
@@ -1340,6 +1342,9 @@ namespace Resistor_Calculator
             // 
             // groupBox14
             // 
+            this.groupBox14.Controls.Add(this.button9);
+            this.groupBox14.Controls.Add(this.button8);
+            this.groupBox14.Controls.Add(this.button2);
             this.groupBox14.Controls.Add(this.pictureBox1);
             this.groupBox14.Controls.Add(this.label61);
             this.groupBox14.Controls.Add(this.button6);
@@ -1350,6 +1355,26 @@ namespace Resistor_Calculator
             this.groupBox14.Size = new System.Drawing.Size(859, 455);
             this.groupBox14.TabIndex = 16;
             this.groupBox14.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(75, 404);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(92, 33);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "OPEN";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(224, 404);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 33);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "SAVE";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox1
             // 
@@ -1372,7 +1397,7 @@ namespace Resistor_Calculator
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(611, 406);
+            this.button6.Location = new System.Drawing.Point(692, 72);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(92, 33);
             this.button6.TabIndex = 12;
@@ -1388,7 +1413,6 @@ namespace Resistor_Calculator
             this.ClientSize = new System.Drawing.Size(884, 761);
             this.Controls.Add(this.groupBox12);
             this.Controls.Add(this.groupBox2);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.groupBox3);
@@ -1568,6 +1592,8 @@ namespace Resistor_Calculator
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
+        private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 

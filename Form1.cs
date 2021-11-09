@@ -11,6 +11,10 @@ using Point = System.Drawing.Point;
 using Rectangle = System.Drawing.Rectangle;
 using System.Drawing.Imaging;
 using System.Drawing.Printing;
+using System.Data;
+using System.IO;
+using System.Diagnostics;
+using System.Security;
 
 namespace Resistor_Calculator
 {
@@ -22,8 +26,10 @@ namespace Resistor_Calculator
             InitializeComponent();
             initialize_all();
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            
-         }
+
+            /*document.PrintPage += new PrintPageEventHandler(document_PrintPage);*/
+
+        }
 
         private void Form1_Load(object sender, EventArgs e) {
             // TODO: This line of code loads data into the 'myDataSet.someTable' table. You can move, or remove it, as needed.
@@ -348,7 +354,7 @@ namespace Resistor_Calculator
             }
 
         }
-
+        private DateTime datetime;
         Bitmap memoryImage;
         private PrintDocument printDocument1 = new PrintDocument();
 
@@ -370,7 +376,7 @@ namespace Resistor_Calculator
             deviation = Math.Round(((new_value-initial_value)/initial_value), 1);
             textBox36.Text = deviation.ToString();
 
-            //  throw new NotImplementedException();
+            
         }
 
         private void textBox39_TextChanged(object sender, EventArgs e)
@@ -385,7 +391,7 @@ namespace Resistor_Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
+           /** CaptureScreen();*/
             printDocument1.Print();
 
         }
@@ -401,10 +407,28 @@ namespace Resistor_Calculator
 
         }
 
-        private void printDocument1_PrintPage(System.Object sender,
+        private void printDocument2_PrintPage(System.Object sender,
          System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
+            /**e.Graphics.DrawImage(memoryImage, 0, 0);**/
+        }
+
+        PrintDocument document = new PrintDocument();
+        PrintDialog dialog = new PrintDialog();
+        
+
+        void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(GetResults(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20);
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            dialog.Document = document;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                document.Print();
+            }
         }
 
         private static void SaveScreenshot(Form frm)
@@ -414,5 +438,137 @@ namespace Resistor_Calculator
             frm.DrawToBitmap(Image, new Rectangle(0, 0, frm.Width, frm.Height));
             Image.Save(ImagePath, System.Drawing.Imaging.ImageFormat.Png);
         }
+
+
+        public string GetResults()
+        {
+            return 
+                "******ACCUL SYSTEM CHANNEL RESULTS******\n "+
+                   "============  R13  ==============\n" +
+                    "Value = " + textBox2.Text + "   ohms\n"+
+                    "R1    = \t" + textBox3.Text + " ohms\n" +
+                    "R2    = \t" + textBox4.Text + " ohms\n" +
+                    "R3    = \t" + textBox5.Text + " ohms\n"  +
+
+
+                    "============  R14  ==============\n" +
+                    "Value = " + textBox6.Text + "   ohms\n" +
+                    "R1    = \t" + textBox7.Text + " ohms\n" +
+                    "R2    = \t" + textBox8.Text + " ohms\n" +
+                    "R3    = \t" + textBox9.Text + " ohms\n\n" +
+
+
+
+                    "******LEFT BRAKE CHANNEL RESULTS******\n " +
+                   "============  R115  ==============\n" +
+                    "Value = " + textBox10.Text + "   ohms\n" +
+                    "R1    = \t" + textBox11.Text + " ohms\n" +
+                    "R2    = \t" + textBox12.Text + " ohms\n" +
+                    "R3    = \t" + textBox13.Text + " ohms\n" +
+
+
+                    "============  R116  ==============\n" +
+                    "Value = " + textBox14.Text + "   ohms\n" +
+                    "R1    = \t" + textBox15.Text + " ohms\n" +
+                    "R2    = \t" + textBox16.Text + " ohms\n" +
+                    "R3    = \t" + textBox17.Text + " ohms\n" +
+
+                    "============  R117  ==============\n" +
+                    "Value = " + textBox18.Text + "   ohms\n" +
+                    "R1    = \t" + textBox19.Text + " ohms\n" +
+                    "R2    = \t" + textBox20.Text + " ohms\n" +
+                    "R3    = \t" + textBox21.Text + " ohms\n\n" +
+
+
+
+
+                    "******RIGHT BRAKE CHANNEL RESULTS******\n " +
+                   "============  R115  ==============\n" +
+                    "Value = " + textBox22.Text + "   ohms\n" +
+                    "R1    = \t" + textBox23.Text + " ohms\n" +
+                    "R2    = \t" + textBox24.Text + " ohms\n" +
+                    "R3    = \t" + textBox25.Text + " ohms\n" +
+
+
+                    "============  R116  ==============\n" +
+                    "Value = " + textBox26.Text + "   ohms\n" +
+                    "R1    = \t" + textBox27.Text + " ohms\n" +
+                    "R2    = \t" + textBox28.Text + " ohms\n" +
+                    "R3    = \t" + textBox29.Text + " ohms\n" +
+
+                    "============  R117  ==============\n" +
+                    "Value = " + textBox30.Text + "   ohms\n" +
+                    "R1    = \t" + textBox31.Text + " ohms\n" +
+                    "R2    = \t" + textBox32.Text + " ohms\n" +
+                    "R3    = \t" + textBox33.Text + " ohms\n";
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            string message = GetResults();
+            string title = "Computation Results";
+            MessageBox.Show(message, title);
+          
+        }
+
+        private void button8_Click(object sender, EventArgs e)
+        {
+            saveResults();
+
+            /**SaveFileDialog sfdlg = new SaveFileDialog();
+            sfdlg.Filter = "Text Files (*.txt) | *.txt"; //Here you can filter which all files you wanted allow to open  
+            if (sfdlg.ShowDialog() == DialogResult.OK)
+            {
+               
+            }**/
+        }
+
+        private void saveResults()
+        {
+            try
+            {
+                string time = datetime.Hour + ":" + datetime.Minute + ":" + datetime.Second;
+                string pathfile = @"C:\DATA\";
+                Directory.CreateDirectory(pathfile);
+                string filename = textBox1.Text + "_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".txt";
+                System.IO.File.WriteAllText(pathfile + filename,"Part Number:" + "64882-206-XX + \t\t" + "Serial No.:" + textBox1.Text + "\n\n\n\n\n\n" + GetResults());
+                MessageBox.Show("Data has been saved to " + pathfile, "Save File");
+            }
+
+            catch (Exception ex3)
+            {
+                MessageBox.Show(ex3.Message, "Error");
+            }
+        }
+
+        OpenFileDialog openFileDialog1 = new OpenFileDialog();
+
+        private void button9_Click(object sender, EventArgs e)
+        {
+            openFileDialog1.Filter = "Text Files (*.txt)|*.txt" + "|" +
+                               "Image Files (*.png;*.jpg)|*.png;*.jpg" + "|" +
+                               "All Files (*.*)|*.*";
+            DialogResult result = openFileDialog1.ShowDialog();
+            if (result == DialogResult.OK)
+            {
+                try
+                {
+                    string file = openFileDialog1.FileName;
+                    using (System.IO.FileStream fs = File.Open(file, FileMode.Open)) ;
+                    {
+                        Process.Start("notepad.exe", file);
+                    }
+                }
+                catch (SecurityException ex)
+                {
+
+                    MessageBox.Show($"Security error.\n\nError message: {ex.Message}\n\n" +
+                $"Details:\n\n{ex.StackTrace}");
+
+                }
+            }
+        }
+
+
     }
 }

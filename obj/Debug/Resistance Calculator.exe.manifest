@@ -43,14 +43,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Resistance Calculator.exe" size="4836280">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Resistance Calculator.exe" size="4840376">
       <assemblyIdentity name="Resistance Calculator" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>gNAT/O1L7tf+dE9uguqVKasiRab/+K0UmxefLLo6bNs=</dsig:DigestValue>
+        <dsig:DigestValue>Ok9vmEEOox2Hdgc3GIoOLt3n2ZlK+RZElVGwvJsoeP8=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

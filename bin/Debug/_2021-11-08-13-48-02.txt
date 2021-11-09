@@ -1,0 +1,45 @@
+******ACCUL SYSTEM CHANNEL RESULTS******
+ ============  R13  ==============
+Value = 1000   ohms
+R1    = 	0 ohms
+R2    = 	1020 ohms
+R3    = 	51000 ohms
+============  R14  ==============
+Value = 2000   ohms
+R1    = 	1500 ohms
+R2    = 	2660 ohms
+R3    = 	615.7 ohms
+
+******LEFT BRAKE CHANNEL RESULTS******
+ ============  R115  ==============
+Value = 3000   ohms
+R1    = 	2250 ohms
+R2    = 	3990 ohms
+R3    = 	923.6 ohms
+============  R116  ==============
+Value = 4000   ohms
+R1    = 	3000 ohms
+R2    = 	5320 ohms
+R3    = 	1231.5 ohms
+============  R117  ==============
+Value = 3000   ohms
+R1    = 	2250 ohms
+R2    = 	3990 ohms
+R3    = 	923.6 ohms
+
+******RIGHT BRAKE CHANNEL RESULTS******
+ ============  R115  ==============
+Value = 500   ohms
+R1    = 	0 ohms
+R2    = 	510 ohms
+R3    = 	25500 ohms
+============  R116  ==============
+Value = 1500   ohms
+R1    = 	1125 ohms
+R2    = 	1995 ohms
+R3    = 	461.8 ohms
+============  R117  ==============
+Value = 2500   ohms
+R1    = 	1875 ohms
+R2    = 	3325 ohms
+R3    = 	769.7 ohms
