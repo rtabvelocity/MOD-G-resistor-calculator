@@ -26,8 +26,10 @@ namespace Resistor_Calculator
             InitializeComponent();
             initialize_all();
             printDocument1.PrintPage += new PrintPageEventHandler(printDocument1_PrintPage);
-            
-         }
+
+            /*document.PrintPage += new PrintPageEventHandler(document_PrintPage);*/
+
+        }
 
         private void Form1_Load(object sender, EventArgs e) {
             // TODO: This line of code loads data into the 'myDataSet.someTable' table. You can move, or remove it, as needed.
@@ -389,7 +391,7 @@ namespace Resistor_Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-            CaptureScreen();
+           /** CaptureScreen();*/
             printDocument1.Print();
 
         }
@@ -405,10 +407,28 @@ namespace Resistor_Calculator
 
         }
 
-        private void printDocument1_PrintPage(System.Object sender,
+        private void printDocument2_PrintPage(System.Object sender,
          System.Drawing.Printing.PrintPageEventArgs e)
         {
-            e.Graphics.DrawImage(memoryImage, 0, 0);
+            /**e.Graphics.DrawImage(memoryImage, 0, 0);**/
+        }
+
+        PrintDocument document = new PrintDocument();
+        PrintDialog dialog = new PrintDialog();
+        
+
+        void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+        {
+            e.Graphics.DrawString(GetResults(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20);
+        }
+
+        private void btnPrint_Click(object sender, EventArgs e)
+        {
+            dialog.Document = document;
+            if (dialog.ShowDialog() == DialogResult.OK)
+            {
+                document.Print();
+            }
         }
 
         private static void SaveScreenshot(Form frm)
@@ -510,7 +530,7 @@ namespace Resistor_Calculator
                 string time = datetime.Hour + ":" + datetime.Minute + ":" + datetime.Second;
                 string pathfile = @"C:\DATA\";
                 Directory.CreateDirectory(pathfile);
-                string filename = textBox1.Text + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".txt";
+                string filename = textBox1.Text + "_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".txt";
                 System.IO.File.WriteAllText(pathfile + filename,"Part Number:" + "64882-206-XX + \t\t" + "Serial No.:" + textBox1.Text + "\n\n\n\n\n\n" + GetResults());
                 MessageBox.Show("Data has been saved to " + pathfile, "Save File");
             }
