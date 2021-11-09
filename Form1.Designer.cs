@@ -153,12 +153,11 @@ namespace Resistor_Calculator
             this.label51 = new System.Windows.Forms.Label();
             this.textBox36 = new System.Windows.Forms.TextBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
+            this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label61 = new System.Windows.Forms.Label();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button9 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
@@ -722,7 +721,7 @@ namespace Resistor_Calculator
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(450, 404);
+            this.button1.Location = new System.Drawing.Point(381, 404);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(92, 33);
             this.button1.TabIndex = 12;
@@ -732,7 +731,7 @@ namespace Resistor_Calculator
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(692, 404);
+            this.button3.Location = new System.Drawing.Point(684, 404);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(92, 33);
             this.button3.TabIndex = 12;
@@ -742,7 +741,7 @@ namespace Resistor_Calculator
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(570, 404);
+            this.button2.Location = new System.Drawing.Point(538, 404);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(93, 33);
             this.button2.TabIndex = 12;
@@ -1345,7 +1344,6 @@ namespace Resistor_Calculator
             // 
             this.groupBox14.Controls.Add(this.button9);
             this.groupBox14.Controls.Add(this.button8);
-            this.groupBox14.Controls.Add(this.button7);
             this.groupBox14.Controls.Add(this.button2);
             this.groupBox14.Controls.Add(this.pictureBox1);
             this.groupBox14.Controls.Add(this.label61);
@@ -1357,6 +1355,26 @@ namespace Resistor_Calculator
             this.groupBox14.Size = new System.Drawing.Size(859, 455);
             this.groupBox14.TabIndex = 16;
             this.groupBox14.TabStop = false;
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(75, 404);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(92, 33);
+            this.button9.TabIndex = 16;
+            this.button9.Text = "OPEN";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(224, 404);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(92, 33);
+            this.button8.TabIndex = 15;
+            this.button8.Text = "SAVE";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // pictureBox1
             // 
@@ -1386,36 +1404,6 @@ namespace Resistor_Calculator
             this.button6.Text = "ABOUT";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.button6_Click);
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(67, 404);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(93, 33);
-            this.button7.TabIndex = 14;
-            this.button7.Text = "VIEW";
-            this.button7.UseVisualStyleBackColor = true;
-            this.button7.Click += new System.EventHandler(this.button7_Click);
-            // 
-            // button8
-            // 
-            this.button8.Location = new System.Drawing.Point(194, 404);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(92, 33);
-            this.button8.TabIndex = 15;
-            this.button8.Text = "SAVE";
-            this.button8.UseVisualStyleBackColor = true;
-            this.button8.Click += new System.EventHandler(this.button8_Click);
-            // 
-            // button9
-            // 
-            this.button9.Location = new System.Drawing.Point(319, 404);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(92, 33);
-            this.button9.TabIndex = 16;
-            this.button9.Text = "OPEN";
-            this.button9.UseVisualStyleBackColor = true;
-            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // Form1
             // 
@@ -1604,7 +1592,6 @@ namespace Resistor_Calculator
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Label label61;
         private System.Windows.Forms.Label label62;
-        private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
     }
