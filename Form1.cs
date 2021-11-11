@@ -375,8 +375,7 @@ namespace Resistor_Calculator
 
             deviation = Math.Round(((new_value-initial_value)/initial_value), 1);
             textBox36.Text = deviation.ToString();
-
-            
+                        
         }
 
         private void textBox39_TextChanged(object sender, EventArgs e)
@@ -391,19 +390,17 @@ namespace Resistor_Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
+            printDocument1.Print();
+
             /** CaptureScreen();*/
-            
-            dialog.Document = document;
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
 
-                PrintDocument pd = new PrintDocument();
+            /**dialog.Document = document;
+            if (dialog.ShowDialog() == DialogResult.OK)           {
 
-                
+                PrintDocument pd = new PrintDocument();                
                 printDocument1.Print();
 
-            }
-            
+            }**/
 
         }
 
