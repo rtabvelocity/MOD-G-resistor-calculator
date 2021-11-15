@@ -375,8 +375,7 @@ namespace Resistor_Calculator
 
             deviation = Math.Round(((new_value-initial_value)/initial_value), 1);
             textBox36.Text = deviation.ToString();
-
-            
+                        
         }
 
         private void textBox39_TextChanged(object sender, EventArgs e)
@@ -391,8 +390,17 @@ namespace Resistor_Calculator
 
         private void button2_Click(object sender, EventArgs e)
         {
-           /** CaptureScreen();*/
             printDocument1.Print();
+
+            /** CaptureScreen();*/
+
+            /**dialog.Document = document;
+            if (dialog.ShowDialog() == DialogResult.OK)           {
+
+                PrintDocument pd = new PrintDocument();                
+                printDocument1.Print();
+
+            }**/
 
         }
 
@@ -407,29 +415,19 @@ namespace Resistor_Calculator
 
         }
 
-        private void printDocument2_PrintPage(System.Object sender,
-         System.Drawing.Printing.PrintPageEventArgs e)
-        {
-            /**e.Graphics.DrawImage(memoryImage, 0, 0);**/
-        }
+       
 
         PrintDocument document = new PrintDocument();
         PrintDialog dialog = new PrintDialog();
         
 
         void printDocument1_PrintPage(object sender, PrintPageEventArgs e)
+
         {
             e.Graphics.DrawString(GetResults(), new Font("Arial", 12, FontStyle.Regular), Brushes.Black, 20, 20);
         }
 
-        private void btnPrint_Click(object sender, EventArgs e)
-        {
-            dialog.Document = document;
-            if (dialog.ShowDialog() == DialogResult.OK)
-            {
-                document.Print();
-            }
-        }
+       
 
         private static void SaveScreenshot(Form frm)
         {
@@ -531,7 +529,7 @@ namespace Resistor_Calculator
                 string pathfile = @"C:\DATA\";
                 Directory.CreateDirectory(pathfile);
                 string filename = textBox1.Text + "_" + DateTime.Now.ToString("yyyy-MM-dd-HH-mm-ss") + ".txt";
-                System.IO.File.WriteAllText(pathfile + filename,"Part Number:" + "64882-206-XX + \t\t" + "Serial No.:" + textBox1.Text + "\n\n\n\n\n\n" + GetResults());
+                System.IO.File.WriteAllText(pathfile + filename,"Part Number:" + "64882-206-XX \t\t" + "Serial No.:" + textBox1.Text + "\n\n\n\n" + GetResults());
                 MessageBox.Show("Data has been saved to " + pathfile, "Save File");
             }
 
